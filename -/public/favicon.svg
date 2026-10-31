@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141416" />
+      <stop offset="100%" stop-color="#080808" />
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#ff2525" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Dark container background with subtle red border accent -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" />
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="15.25" stroke="#ff2525" stroke-opacity="0.3" stroke-width="1.5" />
+
+  <!-- Monogram geometry scaled to 64x64 canvas -->
+  <g transform="translate(9, 9)">
+    <!-- 1. Left Vertical Spine (K stem & A left edge) -->
+    <path d="M10 9 H18 V37 H10 Z" fill="#ffffff" />
+    <path d="M10 9 L18 9 L18 15 L10 9 Z" fill="#ff2525" />
+
+    <!-- 2. Upper diagonal arm of K / apex of A -->
+    <path d="M18 24.5 L33 9 H41 L23.5 27 Z" fill="#ffffff" />
+
+    <!-- 3. Lower diagonal leg of K / right foundation of A -->
+    <path d="M23 26 L41 37 H32.5 L18 28.5 Z" fill="#ffffff" />
+
+    <!-- 4. Signature Red Crossbar of A tying K & A together -->
+    <path d="M14 25 H33 L30 30 H14 Z" fill="#ff2525" filter="url(#glow)" />
+
+    <!-- 5. Top Right Accent Dot -->
+    <circle cx="40" cy="9.5" r="2.5" fill="#ff2525" />
+  </g>
+</svg>
